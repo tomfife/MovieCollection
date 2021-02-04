@@ -1,0 +1,85 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Expand the Epic Collection";
+}
+
+@model MovieCollection.Models.AddMovieResponse
+
+<!--Category,
+    Title,
+    Year,
+    Director,
+    Rating - dropdown menu (G, PG, PG-13, R),
+    Edited - yes/no (true/false) option,
+    Lent To,
+    Notes - limited to 25 characters
+
+    The “Edited”, “Lent To”, and “Notes” fields are optional. All other fields must be entered.
+ -->
+
+
+<div class="card" style=" width: 40rem; margin: 0 auto; float: none; margin-bottom: 10px;">
+    <!--Added some adjustments to center the card-->
+
+    <div class="card-body">
+        <form class="row g-3" asp-action="AddMovies" method="post">
+
+            <div class="col-md-6">
+                <label asp-for="Category" class="form-label">Category</label>
+                <input asp-for="Category" type="text" class="form-control" placeholder="Thriller">
+            </div>
+
+            <div class="col-md-6">
+                <label asp-for="Title" class="form-label">Title</label>
+                <input asp-for="Title" type="text" class="form-control" placeholder="The Prestige">
+            </div>
+
+            <div class="col-md-6">
+                <label asp-for="Year" class="form-label">Year</label>
+                <input asp-for="Year" type="number" class="form-control" placeholder="2006">
+            </div>
+
+            <div class="col-md-6">
+                <label asp-for="Director" class="form-label">Director</label>
+                <input asp-for="Director" type="text" class="form-control" placeholder="Christopher Nolan">
+            </div>
+
+            <div class="col-md-6">
+                <label asp-for="LentTo" class="form-label">Lent To</label>
+                <input asp-for="LentTo" type="text" class="form-control" placeholder="Thomas Fife">
+            </div>
+
+            <div class="col-md-4">
+                <label asp-for="Rating" class="form-label">Rating</label>
+                <select asp-for="Rating" class="form-select" typeof="select">
+                    <option selected>Choose...</option>
+                    <option>G</option>
+                    <option>PG</option>
+                    <option>PG-13</option>
+                    <option>R</option>
+                </select>
+            </div>
+
+            <div class="col-md-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" asp-for="Edited">
+                    <label class="form-check-label" asp-for="Edited">Edited</label>
+                </div>
+            </div>
+            <!--Need to check if this is right or if I should just have -->
+
+            <div class="col-12">
+                <label asp-for="Notes" class="form-label">Notes</label>
+                <input asp-for="Notes" type="text" class="form-control">
+            </div>
+
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Add Movie</button>
+            </div>
+
+            <div asp-validation-summary="All"></div> <!--This makes it show all error messages-->
+        </form>
+    </div>
+</div>
