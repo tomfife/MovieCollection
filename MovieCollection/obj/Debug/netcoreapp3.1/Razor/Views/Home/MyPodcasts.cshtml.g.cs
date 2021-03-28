@@ -26,8 +26,15 @@ using MovieCollection.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "/Users/thomas.fife/Projects/MovieCollection/MovieCollection/Views/_ViewImports.cshtml"
+using MovieCollection.Models.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"11c850c93bd896454c1d6eccb28072218f0b09ad", @"/Views/Home/MyPodcasts.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4193ac9fc819843aae276788a0fb0c9029300161", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"20159c2d4a414c01c67313afef21ec5175997796", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_MyPodcasts : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("data-bs-toggle", new global::Microsoft.AspNetCore.Html.HtmlString("popover"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -69,7 +76,7 @@ using MovieCollection.Models;
 #line hidden
 #nullable disable
             WriteLiteral("\n<div class=\"text-center\">\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "11c850c93bd896454c1d6eccb28072218f0b09ad4503", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "11c850c93bd896454c1d6eccb28072218f0b09ad4704", async() => {
                 WriteLiteral("\n        <input type=\"submit\" value=\"Go to Site\" class=\"btn btn-lg btn-danger\"/>\n    ");
             }
             );

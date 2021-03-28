@@ -26,8 +26,15 @@ using MovieCollection.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "/Users/thomas.fife/Projects/MovieCollection/MovieCollection/Views/_ViewImports.cshtml"
+using MovieCollection.Models.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0aa07997cef09066f0c784721652eef4b38cfb35", @"/Views/Home/Privacy.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4193ac9fc819843aae276788a0fb0c9029300161", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"20159c2d4a414c01c67313afef21ec5175997796", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Privacy : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

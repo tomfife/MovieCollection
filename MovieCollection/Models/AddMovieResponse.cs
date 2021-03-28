@@ -5,6 +5,9 @@ namespace MovieCollection.Models
 {
     public class AddMovieResponse
     {
+        [Key]
+        public int MovieID { get;  set; }
+
         [Required]
         public string Category { get; set; }
 
@@ -18,14 +21,14 @@ namespace MovieCollection.Models
         public string Director { get; set; }
 
         [Required]
-        public char Rating { get; set; } // I'm not sure if this is char or not
+        public string Rating { get; set; }
 
         public bool Edited { get; set; }
 
         public string LentTo  { get; set; }
 
         [MaxLength(25)]
-        public char Notes { get; set; } // not sure about this one either
+        public string Notes { get; set; }
     }
 }
 
